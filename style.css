@@ -30,8 +30,7 @@
       
   }
   
-  
-  nav li {
+   nav li {
       display: inline-flex;
       border-radius: 25px;
       margin-left: 50px;
