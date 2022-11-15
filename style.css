@@ -28,7 +28,7 @@
       color: coral;
       padding: 35px;
       width: 150px;
-      margin-left: 35px;
+      margin-left: 25px;
   }
   
   
@@ -210,6 +210,87 @@
   
   }
   
+/* ESTILOS PAGINA CONTACTO primer seccion */
+.contgral{     
+    color: aliceblue;
+    padding:  0 2.5em;
+}
+
+.contform{
+    box-shadow: 0 20px 20px 0 rgba(179, 18, 18, 0.3);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ .formcontacto{
+    background-color: #302e2e;
+ }
+
+ .formcontacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .formcontacto form .bloque{
+    grid-column: 1/3;
+ } 
+
+ .formcontacto form p{
+    margin: 0;
+    padding: 1.5em;
+ }
+ 
+ .formcontacto form input,
+ .formcontacto form textarea {
+    width: 100%;
+    padding: .5em;
+    border: none;
+    background: none;
+    color: antiquewhite;
+    outline: none;
+    border-bottom: 1px dotted rgb(2, 38, 238);
+ }
+
+ .formcontacto form button {
+    margin: 0 25px 25px 25px;
+    color: aliceblue;
+    background: crimson;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+ }
+
+.formcontacto form button:hover,
+.formcontacto form button:focus {
+    background: #1c0abe;
+    color: #fffb0d;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+ 
+/* ESTILOS PAGINA CONTACTO segunda seccion */
+
+ .forminfocontacto{
+    background-color: black;
+ }
+
+ .forminfocontacto h4,
+ .forminfocontacto ul,
+ .forminfocontacto p{
+    text-align: center;
+    margin: 0 0 1rem 0 ;
+ }
+
+ .forminfocontacto ul{
+    list-style: none;
+ }
+
+ .forminfocontacto ul li{
+    padding: .3em;
+ }
+ 
   footer {
       color: azure;
   }
