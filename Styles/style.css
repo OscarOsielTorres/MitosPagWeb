@@ -18,7 +18,7 @@
       width: 100%;
       list-style-type: none;
       text-align: center;
-      margin-left: 25px;   
+      
          
   }
   nav a {
@@ -218,7 +218,7 @@
 
 .contgral{     
     color: aliceblue;
-    padding:  0 2.5em;
+    padding:  0 1em;
 }
 
 .contform{
@@ -226,7 +226,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    padding: 1em;
 }
 
  .formcontacto{
@@ -251,7 +251,7 @@
 
  .formcontacto form p{
     margin: 0;
-    padding: 1.5em;
+    padding: 1em;
  }
  
  .formcontacto form input,
@@ -350,7 +350,7 @@
 
 
   body{
-      background-image: url(./img/Cantina2.png);
+      background-image: url(../img/Cantina2.png);
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
