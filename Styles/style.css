@@ -225,9 +225,6 @@
   
   }
 
-
-
-
   /* seccion de bebidas en las paginas */
 
   .contenedorpaginas {
@@ -236,14 +233,6 @@
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     
-    
-    /* width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; */
-      
-  
   }
   
   .titulomedio{
@@ -318,6 +307,8 @@
 
   }
 
+  
+
   .infimp:hover h2{
     background: #d34706;
     color: #181616;
@@ -359,7 +350,9 @@
  }
 
  .formcontacto h3{
-    
+
+    color: #ee0d0d;
+    font-size: 30px;
     font-style: italic;
     text-align: center;
     padding: 25px 0 20px 0;
