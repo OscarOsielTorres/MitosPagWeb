@@ -43,24 +43,167 @@
           
   }
   
+
+/* ESTILOS GRID inicio */
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    grid-template-areas:
+      "destilados destilados ron ron contacto contacto "
+      "vino vino cerveza cerveza whisky whisky ";
+  }
+  
+  .menu .grid-item {
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .menu .grid-item a {
+    text-decoration: none;
+  }
+  
+  .menu .grid-item .front {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .menu .grid-item:hover .front {
+    margin-top: -50%;
+  }
+  
+  .menu .grid-item .back {
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 247, 247);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 28px;
+  }
+  
+  .menu .destilados .front{
+    background-image: url("../img/CampoAgavero.jpg");
+   }
+  
+  .menu .ron .front{
+    background-image: url("../img/fabricaron.jpg");
+   }
+  
+  .menu .vino .front{
+    background-image: url("../img/Viniedo.jpg");
+   }
+  
+  .menu .cerveza .front{
+    background-image: url("../img/Cerveza.png");
+   }
+  
+  .menu .whisky .front{
+    background-image: url("../img/Whisky.jpg");
+   }
+  
+   .menu .contacto .front{
+    background-image: url("../img/contactanos.jpg");
+   }
+  .destilados{
+    grid-area: destilados;
+  }
+  
+  .ron{
+    grid-area: ron;
+  }
+  
+  .whisky{
+    grid-area: whisky;
+  }
+  
+  .contacto{
+    grid-area: contacto;
+  }
+  
+  .cerveza{
+    grid-area: cerveza;
+  }
+  
+  .vino{
+    grid-area: vino;
+  }
+  
+ 
+  
+  @media screen and (max-width: 920px){
+    .menu{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-content: center;
+      padding: 15px;
+      grid-template-areas:
+        "destilados   ron"
+        "vino cerveza"
+        "whisky contacto";
+    }
+  
+  
+    .menu .grid-item:hover .front {
+      margin-top: -25%;
+    }
+  
+  
+    @media screen and (max-width: 500px) {
+      .menu {
+  
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      justify-content: center;
+      align-content: center;
+      padding: 15px;
+      grid-template-areas:
+        "destilados"
+        "ron"
+        "vino"
+        "cerveza"
+        "whisky "
+        "contacto";
+    }
+      .menu .grid-item:hover .front {
+      margin-top: -20%
+        }
+  }
+ 
+  }
+
+  /* FIN ESTILOS GRID INICIO */
+
   main{
       margin: 50px 30px 30px 50px;
   }
   
-  .contquienesomos h2{
-      font-size: 35px;
-      color: aqua;
-      border: dotted 2px red;
-      
-  }
-  
+  .contquienesomos h2,
   .contquienesomos p{
-      font-size: 25px;
-      color: rgb(219, 12, 167);
+    background-color: black;
+    font-size: 35px;
+    color: aqua;
+    border: dotted 2px red;
       
   }
-  
-  
+    
   .contenedorindex{
       height: 100%;
       width: 100%;
@@ -72,14 +215,6 @@
   
   }
   
-  
-  .Slider{
-    flex:1;
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: 0 20px 30px rgb(61, 57, 65, 0.010);
-  
-  }
     
   span{
       color: rgb(201, 11, 122);
@@ -89,6 +224,10 @@
       
   
   }
+
+
+
+
   /* seccion de bebidas en las paginas */
 
   .contenedorpaginas {
@@ -199,21 +338,7 @@
       object-fit: cover;
   }
   
-  
-  fieldset{
-      background-color: cornsilk;
-      width: 350px;
-      height: 200px;
-      margin: 50px;
-      padding: 25px;      
-  }
-  
-  fieldset legend{
-      font-size: 35px;
-      color: rgb(189, 22, 153);
-  
-  }
-  
+ 
 /* ESTILOS PAGINA CONTACTO primer seccion */
 
 .contgral{     
@@ -307,31 +432,38 @@
 /* LARGE SCREENS SIZE */
 
 @media (min-width: 800px) {
+
+   
+
     .formcontacto{
         background-color: #181616;
+        font-size: 20px;
 }
- .forminfocontacto{
-    background-color: rgb(83, 48, 48);
+    .forminfocontacto{
+        background-color: rgb(83, 48, 48);
  }
-  .contform{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-} 
-  .forminfocontacto h4,
-  .forminfocontacto ul,
-  .forminfocontacto p {
 
-    color:rgb(153, 63, 238);
-    font-style: italic;
-    margin-top: 1em;
+    .contform{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+} 
+
+    .forminfocontacto h4,
+    .forminfocontacto ul,
+    .forminfocontacto p {
+
+        color:rgb(153, 63, 238);
+        font-style: italic;
+        margin-top: 1em;
 }
-.infimp p{
+
+    .infimp p{
         
-    color: rgb(26, 172, 21);
-    font-size: 25px;
-    background-color: rgb(75, 39, 16);
-    text-align: left;
-    margin: 30px;
+        color: rgb(26, 172, 21);
+        font-size: 25px;
+        background-color: rgb(75, 39, 16);
+        text-align: left;
+        margin: 30px;
 }
 
 }
@@ -350,7 +482,7 @@
 
 
   body{
-      background-image: url(../img/Cantina2.png);
+      background-image: url("../img/Cantina2.png");
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
