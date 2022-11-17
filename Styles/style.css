@@ -195,34 +195,39 @@
       margin: 50px 30px 30px 50px;
   }
   
-  .contquienesomos h2,
-  .contquienesomos p{
+  .contquienesomos h2{
     background-color: black;
     font-size: 35px;
     color: aqua;
     border: dotted 2px red;
-      
-  }
+   }
     
-  .contenedorindex{
-      height: 100%;
+   .contquienesomos p{
+    color: rgb(226, 13, 13);
+    font-size: 20px;
+    background: linear-gradient( turquoise, teal);
+    border: solid 2px rgb(4, 0, 255);
+   }
+
+
+   /* efecto hover a seccion quienes somos */
+   .contquienesomos:hover h2, 
+   .contquienesomos:hover p{
+    background: linear-gradient(to bottom, rgb(27, 27, 26), rgb(73, 67, 67) 80%, rgb(95, 92, 89));
+    animation: 3s alternate slidein;
+    color: #c0b9b9;
+    transition: 1s ease;
+   }
+   @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
       width: 100%;
-      margin:  15px 15px 15px 15px;
-      display: flex;
-      padding: 4% 2%;
-      box-sizing: border-box;
-      flex-wrap: wrap;
-  
-  }
-  
-    
-  span{
-      color: rgb(201, 11, 122);
-      font-size: 30px;
-      font-weight: bolder;
-      background: linear-gradient( turquoise, teal);
-      
-  
+    }
   }
 
   /* seccion de bebidas en las paginas */
