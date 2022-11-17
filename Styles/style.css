@@ -230,6 +230,21 @@
     }
   }
 
+.contimagup{
+  width: 50vw;
+  max-width: 900px;
+  min-width: 320px;
+  margin: 0 auto;
+
+}
+
+.imageninfopag{
+  width: 60%;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px rgba(15, 15, 15, .5);
+}
+
+
   /* seccion de bebidas en las paginas */
 
   .contenedorpaginas {
@@ -328,15 +343,7 @@
       margin: 25px;
       padding: 25px;
   }
-  
-  
-  .imageninfopag{
-      height: 300px;
-      width: 400px;
-      border-radius: 35%;
-      object-fit: cover;
-  }
-  
+
  
 /* ESTILOS PAGINA CONTACTO primer seccion */
 
