@@ -263,7 +263,10 @@
 
 /* efecto hover a cada una de las imagenes de bebidas */
 
-  .img1:hover { 
+  .img1:hover,  
+  .img2:hover,  
+  .img3:hover, 
+  .img4:hover { 
     border-radius:50%;
     -webkit-border-radius:50%;
     box-shadow: 0px 0px 15px 15px #1eec1e;
