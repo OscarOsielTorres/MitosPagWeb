@@ -26,10 +26,11 @@
       font-weight: bolder;
       font-size: 25px;
       padding: 35px;
-      width: 150px;
+      width: 185px;
       
   }
-  
+
+   
    nav li {
       display: inline-flex;
       border-radius: 25px;
