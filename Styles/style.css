@@ -91,6 +91,7 @@
     font-size: 28px;
   }
   
+  /* Imágenes del grid menu de index */
   .menu .destilados .front{
     background-image: url("../img/CampoAgavero.jpg");
    }
@@ -114,6 +115,8 @@
    .menu .contacto .front{
     background-image: url("../img/contactanos.jpg");
    }
+
+   /* Asignando areas del grid */
   .destilados{
     grid-area: destilados;
   }
@@ -138,7 +141,7 @@
     grid-area: vino;
   }
   
- 
+ /* media querys responsive grid */
   
   @media screen and (max-width: 920px){
     .menu{
@@ -192,18 +195,14 @@
   }
   
 
+  /* ESTILOS DE PAGINAS (MAIN) */
+
   .acercaDe{
    
     position: relative;
     text-align: center;
     font-size: 1.5em;
     color: #ffff;
-    
-}
-
-.titdest{
-    padding: 100px;
-    font-size: 2.5em;
     
 }
 
@@ -219,7 +218,7 @@
     
 }
 
-
+/* PAGINA DESTILADOS PART 1-2 */
 .parte1{
     display: grid;
     background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)),url("../img/tequilabotella.jpg");
@@ -240,12 +239,19 @@
    
 }
 
+/* FIN PAGINA DESTILADOS */
+
 .contcock {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
   }
 
 
@@ -261,14 +267,6 @@
     
 }
 
-.contcock {
-    width: 100%;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-    color: #fff;
-}
-
 .bebCock{
     padding-top: 100px;
 }
@@ -279,6 +277,7 @@
 
 }
 
+/* FONDOS CADA PAGINA UNICAS PARTES */
 .partecerv{
   display: grid;
   background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)),url("../img/Cerveza.png");
@@ -364,9 +363,12 @@
 }
       
   .multimedia{
-      display:flex;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
       margin: 25px;
       padding: 25px;
+      text-align: center;
   }
 
  
