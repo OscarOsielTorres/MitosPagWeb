@@ -147,7 +147,7 @@
     .menu{
       display: grid;
       grid-template-columns: repeat(2, 400px);
-      grid-template-rows: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 250px);
       justify-content: center;
       align-content: center;
       padding: 15px;
@@ -159,19 +159,19 @@
   
   
     .menu .grid-item:hover .front {
-      margin-top: -20.5%;
+      margin-top: -63%;
     }
   
   
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 550px) {
       .menu {
   
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 100px);
       justify-content: center;
       align-content: center;
-      padding: 15px;
+      padding: 0 45px 15px 15px;
       grid-template-areas:
         "destilados"
         "ron"
@@ -181,7 +181,7 @@
         "contacto";
     }
       .menu .grid-item:hover .front {
-      margin-top: -22%
+      margin-top: -26%;
         }
   }
 
@@ -466,7 +466,7 @@
 
 /* LARGE SCREENS SIZE */
 
-@media (min-width: 800px) {
+@media (min-width: 920px) {
 
    
 
@@ -511,16 +511,7 @@
       
   }
 
-  .contenidoFooter .piePagGpo1{
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(3,1fr);
-      grid-gap: 50px;
-      padding: 45px 0;
-
-  }
+  
   .contenidoFooter .piePagGpo1 .piePagBox figure {
 
     width: 100%;
@@ -558,8 +549,69 @@
 
   }
 
+  .logo{
+    grid-area: logo;
+  }
+
+  .aboutus{
+    grid-area: aboutus;
+  }
+
+  .siguenos{
+    grid-area: siguenos;
+
+  }
+
 /* media querys footer responsive */
-  @media  screen and (max-width: 500px)  {
+
+@media (min-width: 920px){
+
+  .contenidoFooter .piePagGpo1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+    grid-template-areas:
+    "logo aboutus siguenos"
+  }
+}
+
+
+  @media (max-width: 920px) and (min-width: 550px){
+  .contenidoFooter .piePagGpo1{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 25px;
+    padding: 30px 0;
+    grid-template-areas: 
+      "logo aboutus"
+      "siguenos siguenos";
+    
+  }
+
+  .acercaDe{
+   
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffff;
+    
+}
+.acercaDe h2{
+  font-size: 30px;
+  margin: 35px;
+  padding: 50px;
+}
+}
+
+
+  @media  screen and (max-width: 550px)  {
     .contenidoFooter .piePagGpo1{
       width: 80%;
       margin: auto;
@@ -567,8 +619,26 @@
       grid-template-columns: repeat(1,1fr);
       grid-gap: 25px;
       padding: 30px 0;
+      grid-template-areas:
+      "logo"
+      "aboutus"
+      "siguenos";
       
     }
+    .acercaDe{
+   
+      position: relative;
+      text-align: center;
+      font-size: 1.1em;
+      color: #ffff;
+      
+  }
+  .acercaDe h2{
+    font-size: 30px;
+    margin: 35px;
+    padding: 50px;
+  }
+   
   }
 
   body{
