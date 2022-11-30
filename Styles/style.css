@@ -212,15 +212,17 @@
     margin: 35px;
     padding: 100px ;
     
+    
 }
 .conInfopag h2{
     text-align: center;
     
 }
 
+
 .parte1{
     display: grid;
-    background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/tequilabotella.jpg");
+    background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)),url("../img/tequilabotella.jpg");
     justify-content: center;
     align-content: center;
     padding: 242px;
@@ -230,7 +232,7 @@
 
 .parte2{
     display: grid;
-    background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/mezcal1.jpg");
+    background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)),url("../img/mezcal1.jpg");
     justify-content: center;
     align-content: center;
     padding: 242px;
@@ -277,15 +279,42 @@
 
 }
 
-.parte1cerv{
+.partecerv{
   display: grid;
-  background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/Cerveza.png");
+  background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)),url("../img/Cerveza.png");
   justify-content: center;
   align-content: center;
   padding: 242px;
   margin: 100px 25px 25px 25px;
 }
 
+.parteron{
+  display: grid;
+  background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/fabricaron.jpg");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+}
+
+.partevino{
+  display: grid;
+  background-image: linear-gradient(rgba(28, 8, 50, 0.7), rgba(28, 8, 50, 0.7)),url("../img/vino1.jpeg");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+}
+
+.partewhisky{
+  display: grid;
+  background-image: linear-gradient(rgba(50, 8, 8, 0.7), rgba(50, 8, 8, 0.7)),url("../img/barricaswhisky.jpg");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+  
+}
 
 
   /* seccion de bebidas en las paginas */
@@ -324,7 +353,9 @@
   .img1:hover,  
   .img2:hover,  
   .img3:hover, 
-  .img4:hover { 
+  .img4:hover,
+  .img5:hover,
+  .img6:hover {
     border-radius:50%;
     -webkit-border-radius:50%;
     box-shadow: 0px 0px 15px 15px #1eec1e;
