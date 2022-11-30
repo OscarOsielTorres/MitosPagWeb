@@ -312,7 +312,7 @@
   align-content: center;
   padding: 242px;
   margin: 100px 25px 25px 25px;
-  
+    
 }
 
 
@@ -558,7 +558,7 @@
 
   }
 
-
+/* media querys footer responsive */
   @media  screen and (max-width: 500px)  {
     .contenidoFooter .piePagGpo1{
       width: 80%;
