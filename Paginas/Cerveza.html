@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocktelería Informativa MitOs</title>
+    <title>Cerveza MitOs</title>
     <link rel="shortcut icon" href="../img/favicon2.ico" type="image/x-icon">
     <link rel="stylesheet" href="../Styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FONT-AWESOME -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <!-- CDN BOOTSRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ANIMACIONES AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
@@ -60,29 +66,46 @@
           </nav>
        </header>
     </div>
+
+  <main>
     
-    <section class="infimp">
-        <h2>CERVEZA</h2>
-        <div class="contimagup">
-        <img class="imageninfopag" src="../img/fabricerveza.jpg" alt="fabrica cerveza">
+      <section class="acercaDe">
+        <div class="contInfopag">
+        
+          <h2 class="cerveza" data-aos="zoom-in">CERVEZA</h2>
+        
+
+          <div class="parte1cerv" data-aos="zoom-in" data-aos-duration="2000">
+            <h3 class="conttit" >Cerveza</h3>
+          
+            <p class="infoCerv"> La cerveza es un líquido de malta dulce o fermentada saborizada con lúpulo, fabricada de forma natural. Sus principales ingredientes son cebada, lúpulo, levadura y agua, y el agua con que se la prepara debe ser pura, estéril y potable. Contiene también cebada, que debe ser germinada, secada y tostada, el lúpulo, que le da aroma amargo, y la levadura, que permite su fermentación. 
+          </p>
+          </div>
+       </div>
+      </section>
+
+    <section class="listbeb">
+      <div class="bebCock">
+        <h2 class="titlistbeb" data-aos="fade-down"> Lista de bebidas y/o Cockteleria</h2>
+        <div class="contcock" data-aos="zoom-out" data-aos-duration="2000">
+        
+          <div class="box bebida1"><img class="img1" src="../img/cervbeb7.jpg" alt="raspberrylemonade"><p>Raspberry Lemonade</p></div>
+          <div class="box bebida2"><img class="img2" src="../img/cervbeb2.jpg" alt="margachela"><p>Margachela</p></div>
+          <div class="box bebida3"><img class="img3" src="../img/cervbeb3.jpg" alt="gomichela"><p>Gomichela</p></div>
+          <div class="box bebida4"><img class="img4" src="../img/cervbeb4.jpg" alt="cervezacubana"><p>Cerveza Cubana</p></div>
+          <div class="box bebida4"><img class="img4" src="../img/cervbeb5.jpg" alt="cervezaclamato"><p>Cerveza Clamato</p></div>
+          <div class="box bebida4"><img class="img4" src="../img/cervbeb6.jpg" alt="cucumbersaison"><p>Cucumber Saison</p></div>
+             
+             
+             
         </div>
-        <h2>CERVEZA</h2>
-            <p>La cerveza es un líquido de malta dulce o fermentada saborizada con lúpulo, fabricada de forma natural. Sus principales ingredientes son cebada, lúpulo, levadura y agua, y el agua con que se la prepara debe ser pura, estéril y potable. Contiene también cebada, que debe ser germinada, secada y tostada, el lúpulo, que le da aroma amargo, y la levadura, que permite su fermentación.</p>
-     </section>
+      </div> 
+   </section>
+
+  </main>
 
 
-    <main id=" listabebidas">
-        <h3 class="titulomedio">LISTA DE BEBIDAS Y/O COCKETELERIA</h3>
-        <div class="contenedorpaginas"> 
-
-            <div class="box bebida1"><img class="img1" src="../img/cervbeb1.jpg" alt="raspberrylemonade"><p>Raspberry Lemonade</p></div>
-            <div class="box bebida2"><img class="img2" src="../img/cervbeb2.jpg" alt="margachela"><p>Margachela</p></div>
-            <div class="box bebida3"><img class="img3" src="../img/cervbeb3.jpg" alt="gomichela"><p>Gomichela</p></div>
-            <div class="box bebida4"><img class="img4" src="../img/cervbeb4.jpg" alt="cervezacubana"><p>Cerveza Cubana</p></div>
-
-
-        </div>
-    </main>
+    
 
     <footer  class="piePag" id="footer">
       <div class="contenidoFooter">
@@ -126,6 +149,11 @@
     </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
  
 
 </body>

@@ -2,16 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
+    font-family: 'Raleway', sans-serif;
   }
   
-  .titpag{
-      color: rgb(185, 47, 47); 
-      font-size: 45px;
-      font-weight: bold;
-      text-align: center;
-      background: radial-gradient( rgb(0, 0, 0) 20% ,  rgb(53, 37, 37)70%);
-      padding: 20px;
-  }
   
   /* barra de navegacion*/
   nav ul{
@@ -32,7 +25,6 @@
 
    
    nav li {
-      display: inline-flex;
       border-radius: 25px;
       margin-left: 50px;
       }
@@ -40,7 +32,9 @@
   
   /*efecto al pasar click sobre barra de navegacion*/
   nav li:hover {
-      background: linear-gradient(90deg, darkblue, rgb(111, 24, 168), rgb(204, 27, 101));
+      background: linear-gradient(90deg, rgb(12, 139, 0), rgb(111, 24, 168), rgb(204, 27, 101));
+      font-weight: bold;
+            
           
   }
   
@@ -197,19 +191,101 @@
       margin: 50px 30px 30px 50px;
   }
   
-.contimagup{
-  width: 50vw;
-  max-width: 900px;
-  min-width: 320px;
-  margin: 0 auto;
+
+  .acercaDe{
+   
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffff;
+    
+}
+
+.titdest{
+    padding: 100px;
+    font-size: 2.5em;
+    
+}
+
+.acercaDe h2{
+    font-size: 42px;
+    margin: 35px;
+    padding: 100px ;
+    
+}
+.conInfopag h2{
+    text-align: center;
+    
+}
+
+.parte1{
+    display: grid;
+    background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/tequilabotella.jpg");
+    justify-content: center;
+    align-content: center;
+    padding: 242px;
+    margin: 100px 25px 25px 25px;
+   
+}
+
+.parte2{
+    display: grid;
+    background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/mezcal1.jpg");
+    justify-content: center;
+    align-content: center;
+    padding: 242px;
+    margin: 100px 25px 25px 25px;
+   
+}
+
+.contcock {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+
+  .box{
+    margin: 20px;
+    }
+
+.box img{
+    width: 260px;
+    height: 250px;
+    border-radius: 10%;
+    object-fit:fill;
+    
+}
+
+.contcock {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.bebCock{
+    padding-top: 100px;
+}
+
+.bebCock h2{
+    text-align: center;
+    padding-bottom: 100px;
 
 }
 
-.imageninfopag{
-  width: 60%;
-  border-radius: 15px;
-  box-shadow: 0 10px 10px rgba(15, 15, 15, .5);
+.parte1cerv{
+  display: grid;
+  background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/Cerveza.png");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
 }
+
 
 
   /* seccion de bebidas en las paginas */
@@ -222,13 +298,13 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   
-  .titulomedio{
+  .titlistbeb{
       width: 100%;
       font-size: 30px;
       text-align: center;
       font-weight: bold;
       margin: 30px;
-      color: rgb(255, 0, 0);
+      color: #ffff;
   }
   
   .box{
@@ -252,59 +328,10 @@
     border-radius:50%;
     -webkit-border-radius:50%;
     box-shadow: 0px 0px 15px 15px #1eec1e;
-    -webkit-box-shadow: 0px 0px 15px 15px #1eec39;
+    -webkit-box-shadow: 0px 0px 15px 15px #deec1a;
     
 }
-  
-  .box p{
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      color: deeppink;
-      background-color: beige;
-           
-  }
-  
-  body section h2{
-      margin: 60px;
-      background-color: darkgoldenrod;
-      text-align: center;
-  
-  }
-  
-  body section p {
-      background-color: rgb(182, 182, 27);
-  }
-  
-  .infimp{
-  
-      font-size: 25px ;
-      text-align: center;
-          
-  }
-
-  .infimp h2{
-    color: red;
-  }
-  
-  .infimp p{
-        
-      color: rgb(10, 34, 141);
-      font-size: 25px;
-      background-color: lightblue;
-      text-align: center;
-      margin: 50px;
-
-  }
-
-  
-
-  .infimp:hover h2{
-    background: #d34706;
-    color: #181616;
-    transition: 1s ease;
-  }
-  
+      
   .multimedia{
       display:flex;
       margin: 25px;
@@ -512,9 +539,10 @@
   }
 
   body{
-      background-image: url("../img/Cantina2.png");
+      background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../img/Cantina2.png");
       background-attachment: fixed;
       background-position: center;
       background-size: cover;
+      
       
     }
