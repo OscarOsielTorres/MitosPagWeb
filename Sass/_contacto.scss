@@ -1,0 +1,121 @@
+/* ESTILOS PAGINA CONTACTO primer seccion */
+
+.contgral{     
+    color: aliceblue;
+    padding:  0 1em;
+}
+
+.contform{
+    box-shadow: 0 20px 20px 0 rgba(179, 18, 18, 0.3);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.formcontacto{
+
+  &{
+  background-color: #302e2e;
+}
+  h3{ 
+  color: #ee0d0d;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+  padding: 25px 0 20px 0;
+}
+
+  form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+  form .bloque{
+  grid-column: 1/3;
+} 
+
+  form p{
+  margin: 0;
+  padding: 1em;
+}
+  & form input,
+  & form textarea {
+  width: 100%;
+  padding: .5em;
+  border: none;
+  background: none;
+  color: $colorTextoPagina;
+  outline: none;
+  border-bottom: 1px dotted rgb(2, 38, 238);
+}
+  form button {
+  margin: 0 25px 25px 25px;
+  color: aliceblue;
+  background: crimson;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+}
+
+  & form button:hover,
+  & form button:focus {
+  background: #1c0abe;
+  color: #fffb0d;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+}
+
+/* ESTILOS PAGINA CONTACTO segunda seccion */
+
+.forminfocontacto{
+  &{
+  background-color: black;
+}
+  h4,
+  ul,
+  p{
+  
+  text-align: center;
+  margin: 0 0 1rem 0 ;
+}
+  ul{
+  list-style: none;
+}
+
+  ul li{
+  padding: .3em;
+}
+}
+
+/* LARGE SCREENS SIZE */
+
+@media (min-width: $tablet) {
+
+ 
+
+  .formcontacto{
+      background-color: #181616;
+      font-size: 20px;
+}
+  .contform{
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+} 
+
+  .forminfocontacto{
+      
+      background-color: rgb(83, 48, 48);
+}
+
+  
+  .forminfocontacto h4,
+  .forminfocontacto ul,
+  .forminfocontacto p {
+
+      color:rgb(153, 63, 238);
+      font-style: italic;
+      margin-top: 1em;
+}
+}

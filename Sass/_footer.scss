@@ -1,0 +1,125 @@
+/* ESTILOS DEL FOOTER */
+
+.contenidoFooter {
+    &{
+    width: 100%;
+    background-color: #1f2931;
+
+    }
+    
+    .piePagGpo1 .piePagBox figure {
+    width: 100%;
+    weight: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .piePagGpo1 .piePagBox figure img {
+    width: 200px;
+    }
+    
+    .piePagGpo1 .piePagBox h4{
+    color: $colorTextoPagina;
+    margin-bottom: 1.5em;
+    font-size: 1.25em;
+    }
+
+    .piePagGpo1 .piePagBox p{
+    color: $colorTextoPagina;
+}   
+    .piePagGpo2 {  
+    background-color: #202f3b;
+    padding: 15px 10px;
+    text-align: center;
+    color: $colorTextoPagina;
+
+}  
+}
+
+footer ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+} 
+
+
+
+.logo{
+  grid-area: logo;
+}
+
+.aboutus{
+  grid-area: aboutus;
+}
+
+.siguenos{
+  grid-area: siguenos;
+
+}
+
+/* media querys footer responsive */
+
+@media (min-width: $tablet){
+
+    .contenidoFooter .piePagGpo1{
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 50px;
+      padding: 45px 0;
+      grid-template-areas:
+      "logo aboutus siguenos"
+    }
+  }
+  
+  
+@media (max-width: $tablet) and (min-width: $mobile){
+    .contenidoFooter .piePagGpo1{
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      grid-gap: 25px;
+      padding: 30px 0;
+      grid-template-areas: 
+        "logo aboutus"
+        "siguenos siguenos";
+      
+    }
+    .acercaDe{
+   
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    color: $colorTextoPagina;
+        
+    }
+    .acercaDe h2{
+      font-size: 30px;
+      margin: 35px;
+      padding: 50px;
+    }
+    }
+
+
+@media  screen and (max-width: $mobile)  {
+        .contenidoFooter .piePagGpo1{
+        width: 80%;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          grid-gap: 25px;
+          padding: 30px 0;
+          grid-template-areas:
+          "logo"
+          "aboutus"
+          "siguenos";
+          
+        }
+    
+       
+    }

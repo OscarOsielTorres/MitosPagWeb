@@ -1,0 +1,29 @@
+  /* barra de navegacion*/
+  nav {
+    ul{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    }
+
+    a {
+    text-decoration: none;
+    font: {
+        weight: bolder;
+        size: 25px; }
+    padding: 35px;
+    width: 185px;
+    }
+
+    li {
+    border-radius: 25px;
+    margin-left: 50px;
+    }
+
+    /*efecto al pasar click sobre barra de navegacion*/
+    & li:hover {
+    background: linear-gradient(90deg, rgb(12, 139, 0), rgb(111, 24, 168), rgb(204, 27, 101));
+    font-weight: bold; 
+    }
+}
+
