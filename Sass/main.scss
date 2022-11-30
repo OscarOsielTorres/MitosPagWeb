@@ -1,3 +1,7 @@
+
+$colorTextoPagina: #ffff;
+
+
 *{
     margin: 0;
     padding: 0;
@@ -61,7 +65,7 @@
   }
    
     .grid-item .front {
-    color: rgb(255, 255, 255);
+    color: $colorTextoPagina;
     background: { 
         color: rgb(0, 0, 0);
         size: cover;
@@ -82,7 +86,7 @@
   
   .grid-item .back {
     background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    color: $colorTextoPagina;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -198,7 +202,7 @@
     position: relative;
     text-align: center;
     font-size: 1.5em;
-    color: #ffff;
+    color: $colorTextoPagina;
     
 }
     h2{
@@ -247,7 +251,7 @@
     font-size: 30px;
     text-align: center;
     font-weight: bold;
-    color: #fff;
+    color:$colorTextoPagina;
   }
 
 
@@ -329,7 +333,7 @@
       text-align: center;
       font-weight: bold;
       margin: 30px;
-      color: #ffff;
+      color: $colorTextoPagina;
   }
   /* efecto hover a cada una de las imagenes de bebidas */
 
@@ -402,7 +406,7 @@
     padding: .5em;
     border: none;
     background: none;
-    color: antiquewhite;
+    color: $colorTextoPagina;
     outline: none;
     border-bottom: 1px dotted rgb(2, 38, 238);
  }
@@ -499,19 +503,19 @@
     }
     
     .piePagGpo1 .piePagBox h4{
-    color: #ffffff;
+    color: $colorTextoPagina;
     margin-bottom: 1.5em;
     font-size: 1.25em;
     }
 
     .piePagGpo1 .piePagBox p{
-    color: #ffffff
+    color: $colorTextoPagina;
 }   
     .piePagGpo2 {  
     background-color: #202f3b;
     padding: 15px 10px;
     text-align: center;
-    color: #ffffff;
+    color: $colorTextoPagina;
 
 }  
 }
@@ -574,7 +578,7 @@ footer ul{
         position: relative;
         text-align: center;
         font-size: 1.1em;
-        color: #ffff;
+        color: $colorTextoPagina;
         
     }
     .acercaDe h2{
@@ -597,19 +601,7 @@ footer ul{
           "siguenos";
           
         }
-    .acercaDe{
-       
-    position: relative;
-    text-align: center;
-    font-size: 1.1em;
-    color: #ffff;
-    }
-
-    .acercaDe h2{
-    font-size: 30px;
-    margin: 35px;
-    padding: 50px;
-    }
+    
        
     }
     

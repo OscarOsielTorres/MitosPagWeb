@@ -53,7 +53,7 @@ nav li:hover {
   text-decoration: none;
 }
 .menu .grid-item .front {
-  color: rgb(255, 255, 255);
+  color: white;
   background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: center;
@@ -70,7 +70,7 @@ nav li:hover {
 }
 .menu .grid-item .back {
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: white;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -203,7 +203,7 @@ main {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  color: #fff;
+  color: white;
 }
 
 .box {
@@ -342,7 +342,7 @@ main {
   padding: 0.5em;
   border: none;
   background: none;
-  color: antiquewhite;
+  color: white;
   outline: none;
   border-bottom: 1px dotted rgb(2, 38, 238);
 }
@@ -415,18 +415,18 @@ main {
   width: 200px;
 }
 .contenidoFooter .piePagGpo1 .piePagBox h4 {
-  color: #ffffff;
+  color: white;
   margin-bottom: 1.5em;
   font-size: 1.25em;
 }
 .contenidoFooter .piePagGpo1 .piePagBox p {
-  color: #ffffff;
+  color: white;
 }
 .contenidoFooter .piePagGpo2 {
   background-color: #202f3b;
   padding: 15px 10px;
   text-align: center;
-  color: #ffffff;
+  color: white;
 }
 
 footer ul {
@@ -492,17 +492,6 @@ footer ul {
     grid-gap: 25px;
     padding: 30px 0;
     grid-template-areas: "logo" "aboutus" "siguenos";
-  }
-  .acercaDe {
-    position: relative;
-    text-align: center;
-    font-size: 1.1em;
-    color: white;
-  }
-  .acercaDe h2 {
-    font-size: 30px;
-    margin: 35px;
-    padding: 50px;
   }
 }
 body {
