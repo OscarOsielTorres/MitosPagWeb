@@ -460,7 +460,7 @@ footer ul {
     grid-template-areas: "logo aboutus siguenos";
   }
 }
-@media (max-width: 920px) and (min-width: 600px) {
+@media (max-width: 920px) and (min-width: 550px) {
   .contenidoFooter .piePagGpo1 {
     width: 80%;
     margin: auto;
@@ -483,7 +483,7 @@ footer ul {
     padding: 50px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .contenidoFooter .piePagGpo1 {
     width: 80%;
     margin: auto;

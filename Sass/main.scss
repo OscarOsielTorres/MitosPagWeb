@@ -1,5 +1,7 @@
 
 $colorTextoPagina: #ffff;
+$mobile: 550px;
+$tablet: 920px;
 
 
 *{
@@ -149,7 +151,7 @@ $colorTextoPagina: #ffff;
 
   /* media querys responsive grid */
   
-  @media screen and (max-width: 920px){
+  @media screen and (max-width: $tablet){
     .menu{
       display: grid;
       grid-template-columns: repeat(2, 400px);
@@ -167,7 +169,7 @@ $colorTextoPagina: #ffff;
       margin-top: -63%;
     }
   
-      @media screen and (max-width: 550px) {
+      @media screen and (max-width: $mobile) {
       .menu {
   
       display: grid;
@@ -452,7 +454,7 @@ $colorTextoPagina: #ffff;
 
 /* LARGE SCREENS SIZE */
 
-@media (min-width: 920px) {
+@media (min-width: $tablet) {
 
    
 
@@ -543,7 +545,7 @@ footer ul{
 
 /* media querys footer responsive */
 
-@media (min-width: 920px){
+@media (min-width: $tablet){
 
     .contenidoFooter .piePagGpo1{
       width: 100%;
@@ -559,7 +561,7 @@ footer ul{
   }
   
   
-@media (max-width: 920px) and (min-width: 600px){
+@media (max-width: $tablet) and (min-width: $mobile){
     .contenidoFooter .piePagGpo1{
       width: 80%;
       margin: auto;
@@ -575,10 +577,10 @@ footer ul{
     }
     .acercaDe{
    
-        position: relative;
-        text-align: center;
-        font-size: 1.1em;
-        color: $colorTextoPagina;
+    position: relative;
+    text-align: center;
+    font-size: 1.1em;
+    color: $colorTextoPagina;
         
     }
     .acercaDe h2{
@@ -587,7 +589,7 @@ footer ul{
       padding: 50px;
     }
     }
-@media  screen and (max-width: 600px)  {
+@media  screen and (max-width: $mobile)  {
         .contenidoFooter .piePagGpo1{
         width: 80%;
           margin: auto;
