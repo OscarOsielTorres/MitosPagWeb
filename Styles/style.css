@@ -580,7 +580,7 @@
 }
 
 
-  @media (max-width: 920px) and (min-width: 550px){
+  @media (max-width: 920px) and (min-width: 600px){
   .contenidoFooter .piePagGpo1{
     width: 80%;
     margin: auto;
@@ -611,7 +611,7 @@
 }
 
 
-  @media  screen and (max-width: 550px)  {
+  @media  screen and (max-width: 600px)  {
     .contenidoFooter .piePagGpo1{
       width: 80%;
       margin: auto;
