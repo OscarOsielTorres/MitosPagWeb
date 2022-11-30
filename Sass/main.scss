@@ -173,9 +173,14 @@
     &{
     position: relative;
     text-align: center;
-    font-size: 1.5em;
-    color: $colorTextoPagina;
     
+    @if $colorTextoPagina == #ffff {
+      font-size: 1.5em;
+      color: $colorTextoPagina;    
+    } @else {
+      color: red;
+    }
+        
 }
     h2{
     font-size: 42px;

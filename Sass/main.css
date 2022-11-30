@@ -6,7 +6,7 @@
 }
 .contenidoFooter .piePagGpo1 .piePagBox figure {
   width: 100%;
-  height: 100%;
+  weight: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +192,10 @@ footer ul {
   }
 }
 /* barra de navegacion*/
- nav ul {
+nav {
+  /*efecto al pasar click sobre barra de navegacion*/
+}
+nav ul {
   width: 100%;
   list-style-type: none;
   text-align: center;
@@ -208,7 +211,6 @@ nav li {
   border-radius: 25px;
   margin-left: 50px;
 }
- /*efecto al pasar click sobre barra de navegacion*/
 nav li:hover {
   background: linear-gradient(90deg, rgb(12, 139, 0), rgb(111, 24, 168), rgb(204, 27, 101));
   font-weight: bold;
@@ -222,8 +224,9 @@ nav li:hover {
 }
 
 /* ESTILOS GRID inicio */
-
-
+.menu {
+  /* Imágenes del grid menu de index */
+}
 .menu .grid-item {
   height: 100%;
   overflow: hidden;
@@ -266,8 +269,6 @@ nav li:hover {
   height: 100%;
   font-weight: bold;
   font-size: 28px;
-
-  /* Imágenes del grid menu de index */
 }
 .menu .destilados .front {
   background-image: url("../img/CampoAgavero.jpg");
