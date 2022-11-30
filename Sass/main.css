@@ -32,9 +32,7 @@ nav li:hover {
 }
 
 /* ESTILOS GRID inicio */
-.menu {
-  /* Imágenes del grid menu de index */
-}
+
 .menu .grid-item {
   height: 100%;
   overflow: hidden;
@@ -77,7 +75,9 @@ nav li:hover {
   height: 100%;
   font-weight: bold;
   font-size: 28px;
+
 }
+ /* Imágenes del grid menu de index */
 .menu .destilados .front {
   background-image: url("../img/CampoAgavero.jpg");
 }
