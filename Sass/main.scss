@@ -3,6 +3,7 @@
 @import "footer";
 @import "contacto";
 @import "navbar";
+@import "gridIndex";
 
 *{
     margin: 0;
@@ -11,168 +12,18 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/* ESTILOS GRID inicio */
 
-.menu{
-
-    .grid-item {
-        height: 100%;
-        overflow: hidden;
-        cursor: pointer;}
-
-    &{
-    display: grid;
-    grid-template-columns: repeat(6, 300px);
-    grid-template-rows: repeat(2, 400px);
-    justify-content: center;
-    align-content: center;
-    padding: 25px;
-    grid-template-areas:
-      "destilados destilados ron ron contacto contacto "
-      "vino vino cerveza cerveza whisky whisky ";
- }
-
-    .grid-item a {
-    text-decoration: none;
-  }
-   
-    .grid-item .front {
-    color: $colorTextoPagina;
-    background: { 
-        color: rgb(0, 0, 0);
-        size: cover;
-        position: center;}
-    height: 100%;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    transition: all 0.3s ease;
-    padding: 20px;
-    box-sizing: border-box;
-    
-  }
-  
-  .grid-item:hover .front {
-    margin-top: -66.6%;
-  }
-  
-  .grid-item .back {
-    background-color: rgb(0, 0, 0);
-    color: $colorTextoPagina;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
-    font-weight: bold;
-    font-size: 28px;
-  }
-
-  /* Imágenes del grid menu de index */
-   .destilados .front{
-    background-image: url("../img/CampoAgavero.jpg");
-   }
-    .ron .front{
-    background-image: url("../img/fabricaron.jpg");
-   }
-  
-   .vino .front{
-    background-image: url("../img/Viniedo.jpg");
-   }
-  
-  .cerveza .front{
-    background-image: url("../img/Cerveza.png");
-   }
-  
-   .whisky .front{
-    background-image: url("../img/Whisky.jpg");
-   }
-  
-    .contacto .front{
-    background-image: url("../img/contactanos.jpg");
-   }
-
-}
-
-/* Asignando areas del grid */
-.destilados{
-    grid-area: destilados;
-  }
-  
-  .ron{
-    grid-area: ron;
-  }
-  
-  .whisky{
-    grid-area: whisky;
-  }
-  
-  .contacto{
-    grid-area: contacto;
-  }
-  
-  .cerveza{
-    grid-area: cerveza;
-  }
-  
-  .vino{
-    grid-area: vino;
-  }
-
-
-  /* media querys responsive grid */
-  
-  @media screen and (max-width: $tablet){
-    .menu{
-      display: grid;
-      grid-template-columns: repeat(2, 400px);
-      grid-template-rows: repeat(3, 250px);
-      justify-content: center;
-      align-content: center;
-      padding: 15px;
-      grid-template-areas:
-        "destilados   ron"
-        "vino cerveza"
-        "whisky contacto";
-    }
-  
-    .menu .grid-item:hover .front {
-      margin-top: -63%;
-    }
-  
-      @media screen and (max-width: $mobile) {
-      .menu {
-  
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(6, 100px);
-      justify-content: center;
-      align-content: center;
-      padding: 0 45px 15px 15px;
-      grid-template-areas:
-        "destilados"
-        "ron"
-        "vino"
-        "cerveza"
-        "whisky "
-        "contacto";
-    }
-      .menu .grid-item:hover .front {
-      margin-top: -26%;
-        }
-  }
-  }
-  /* FIN ESTILOS GRID INICIO */
   main{
     margin: 50px 30px 30px 50px;
 }
 
  /* ESTILOS DE PAGINAS (MAIN) */
-
- .acercaDe{
+  .acercaDe{
    
     &{
     position: relative;
     text-align: center;
+    
     
     @if $colorTextoPagina == #ffff {
       font-size: 1.5em;
@@ -186,18 +37,15 @@
     font-size: 42px;
     margin: 35px;
     padding: 100px ;
+    
       
 }
 }
-.conInfopag h2{
-    text-align: center;
-    
-}
-
 
 /* PAGINA DESTILADOS PART 1-2 */
 .parte1{
     display: grid;
+    font-weight: bold;
     background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)),url("../img/tequilabotella.jpg");
     justify-content: center;
     align-content: center;
@@ -257,54 +105,54 @@
     }
     
  }
+// MEDIA QUERYS PAGINAS //
+
+
+
 
  /* FONDOS CADA PAGINA UNICAS PARTES */
-.partecerv{
-    display: grid;
-    background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)),url("../img/Cerveza.png");
-    justify-content: center;
-    align-content: center;
-    padding: 242px;
-    margin: 100px 25px 25px 25px;
+ .partecerv{
+  max-width: 1200px;
+  width: 100%;
+  background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)), url("../img/Cerveza.png");
+  justify-content: center;
+  margin: 0 auto;
+  padding: 45px 20px;
+  margin-top: 150px;
   }
   
   .parteron{
-    display: grid;
+    max-width: 1200px;
+    width: 100%;
     background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/fabricaron.jpg");
     justify-content: center;
-    align-content: center;
-    padding: 242px;
-    margin: 100px 25px 25px 25px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    margin-top: 150px;
   }
   
   .partevino{
-    display: grid;
+    max-width: 1200px;
+    width: 100%;
     background-image: linear-gradient(rgba(28, 8, 50, 0.7), rgba(28, 8, 50, 0.7)),url("../img/vino1.jpeg");
     justify-content: center;
-    align-content: center;
-    padding: 242px;
-    margin: 100px 25px 25px 25px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    margin-top: 150px;
   }
   
   .partewhisky{
-    display: grid;
+    max-width: 1200px;
+    width: 100%;
     background-image: linear-gradient(rgba(50, 8, 8, 0.7), rgba(50, 8, 8, 0.7)),url("../img/barricaswhisky.jpg");
     justify-content: center;
-    align-content: center;
-    padding: 242px;
-    margin: 100px 25px 25px 25px;
+    margin: 0 auto;
+    padding: 45px 20px;
+    margin-top: 150px;
 }
 /* seccion de bebidas en las paginas */
 
-.contenedorpaginas {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  
-  .titlistbeb{
+.titlistbeb{
       width: 100%;
       font-size: 30px;
       text-align: center;
@@ -335,15 +183,14 @@
       padding: 25px;
       text-align: center;
   }
-
-    
+   
  body{
     background: {
     image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("../img/Cantina.png");
     attachment: fixed;
     position: center;
     size: cover;}
-  }
+    }
     
 
  

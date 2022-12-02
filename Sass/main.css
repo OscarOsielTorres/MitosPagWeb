@@ -192,8 +192,9 @@ footer ul {
   }
 }
 /* barra de navegacion*/
+nav {
   /*efecto al pasar click sobre barra de navegacion*/
-
+}
 nav ul {
   width: 100%;
   list-style-type: none;
@@ -215,17 +216,10 @@ nav li:hover {
   font-weight: bold;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Raleway", sans-serif;
-}
-
 /* ESTILOS GRID inicio */
-
- 
-
+.menu {
+  /* Imágenes del grid menu de index */
+}
 .menu .grid-item {
   height: 100%;
   overflow: hidden;
@@ -269,8 +263,6 @@ nav li:hover {
   font-weight: bold;
   font-size: 28px;
 }
-
-/* Imágenes del grid menu de index */
 .menu .destilados .front {
   background-image: url("../img/CampoAgavero.jpg");
 }
@@ -345,6 +337,13 @@ nav li:hover {
   }
 }
 /* FIN ESTILOS GRID INICIO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
 main {
   margin: 50px 30px 30px 50px;
 }
@@ -362,13 +361,10 @@ main {
   padding: 100px;
 }
 
-.conInfopag h2 {
-  text-align: center;
-}
-
 /* PAGINA DESTILADOS PART 1-2 */
 .parte1 {
   display: grid;
+  font-weight: bold;
   background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)), url("../img/tequilabotella.jpg");
   justify-content: center;
   align-content: center;
@@ -420,50 +416,46 @@ main {
 
 /* FONDOS CADA PAGINA UNICAS PARTES */
 .partecerv {
-  display: grid;
+  max-width: 1200px;
+  width: 100%;
   background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)), url("../img/Cerveza.png");
   justify-content: center;
-  align-content: center;
-  padding: 242px;
-  margin: 100px 25px 25px 25px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  margin-top: 150px;
 }
 
 .parteron {
-  display: grid;
+  max-width: 1200px;
+  width: 100%;
   background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)), url("../img/fabricaron.jpg");
   justify-content: center;
-  align-content: center;
-  padding: 242px;
-  margin: 100px 25px 25px 25px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  margin-top: 150px;
 }
 
 .partevino {
-  display: grid;
+  max-width: 1200px;
+  width: 100%;
   background-image: linear-gradient(rgba(28, 8, 50, 0.7), rgba(28, 8, 50, 0.7)), url("../img/vino1.jpeg");
   justify-content: center;
-  align-content: center;
-  padding: 242px;
-  margin: 100px 25px 25px 25px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  margin-top: 150px;
 }
 
 .partewhisky {
-  display: grid;
+  max-width: 1200px;
+  width: 100%;
   background-image: linear-gradient(rgba(50, 8, 8, 0.7), rgba(50, 8, 8, 0.7)), url("../img/barricaswhisky.jpg");
   justify-content: center;
-  align-content: center;
-  padding: 242px;
-  margin: 100px 25px 25px 25px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  margin-top: 150px;
 }
 
 /* seccion de bebidas en las paginas */
-.contenedorpaginas {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
 .titlistbeb {
   width: 100%;
   font-size: 30px;
