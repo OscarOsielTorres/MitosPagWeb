@@ -106,51 +106,91 @@
     }
     
  }
-// MEDIA QUERYS PAGINAS //
-
-
 
 
  /* FONDOS CADA PAGINA UNICAS PARTES */
  .partecerv{
+  display: grid;
+  background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)), url("../img/Cerveza.png");
+    justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+  }
+  
+  .parteron{
+  display: grid;  
+  background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/fabricaron.jpg");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+  }
+  
+  .partevino{
+  display: grid; 
+  background-image: linear-gradient(rgba(28, 8, 50, 0.7), rgba(28, 8, 50, 0.7)),url("../img/vino1.jpeg");
+  justify-content: center;
+  align-content: center;
+  padding: 242px;
+  margin: 100px 25px 25px 25px;
+  }
+  
+  .partewhisky{
+    display: grid;
+    background-image: linear-gradient(rgba(50, 8, 8, 0.7), rgba(50, 8, 8, 0.7)),url("../img/barricaswhisky.jpg");
+    justify-content: center;
+    align-content: center;
+    padding: 242px;
+    margin: 100px 25px 25px 25px;
+  }
+// MEDIA QUERYS PAGINAS //
+
+@media (max-width: $tablet) and (min-width: $mobile) {
+  .parte1,
+  .parte2,
+  .partecerv,
+  .parteron,
+  .partevino,
+  .partewhisky{
   max-width: 1200px;
   width: 100%;
-  background-image: linear-gradient(rgba(65, 71, 12, 0.7), rgba(65, 71, 12, 0.7)), url("../img/Cerveza.png");
   justify-content: center;
   margin: 0 auto;
   padding: 45px 20px;
   margin-top: 150px;
+  font-size: 20px;
   }
-  
-  .parteron{
-    max-width: 1200px;
-    width: 100%;
-    background-image: linear-gradient(rgba(5, 31, 22, 0.7), rgba(5, 31, 22, 0.7)),url("../img/fabricaron.jpg");
-    justify-content: center;
-    margin: 0 auto;
-    padding: 45px 20px;
-    margin-top: 150px;
+  .acercaDe h2{
+    font-size: 36px;
   }
-  
-  .partevino{
-    max-width: 1200px;
-    width: 100%;
-    background-image: linear-gradient(rgba(28, 8, 50, 0.7), rgba(28, 8, 50, 0.7)),url("../img/vino1.jpeg");
-    justify-content: center;
-    margin: 0 auto;
-    padding: 45px 20px;
-    margin-top: 150px;
-  }
-  
+ }
+@media screen and (max-width: $mobile) {
+  .parte1,
+  .parte2,
+  .partecerv,
+  .parteron,
+  .partevino,
   .partewhisky{
-    max-width: 1200px;
-    width: 100%;
-    background-image: linear-gradient(rgba(50, 8, 8, 0.7), rgba(50, 8, 8, 0.7)),url("../img/barricaswhisky.jpg");
-    justify-content: center;
-    margin: 0 auto;
-    padding: 45px 20px;
-    margin-top: 150px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 35px 15px;
+  margin-top: 150px;
+  font-size: 16px;
+  }
+  
+
+  .acercaDe h2{
+    font-size: 28px;
+  }
 }
+
+
+
+
+ 
 /* seccion de bebidas en las paginas */
 
 .titlistbeb{
