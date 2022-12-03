@@ -10,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;  
     font-family: 'Raleway', sans-serif;
+    
 }
 
 
@@ -45,7 +46,6 @@
 /* PAGINA DESTILADOS PART 1-2 */
 .parte1{
     display: grid;
-    font-weight: bold;
     background-image: linear-gradient(rgba(9, 61, 43, 0.7), rgba(9, 61, 43, 0.7)),url("../img/tequilabotella.jpg");
     justify-content: center;
     align-content: center;
@@ -63,6 +63,7 @@
     margin: 100px 25px 25px 25px;
    
 }
+
 
 /* FIN PAGINA DESTILADOS */
 
