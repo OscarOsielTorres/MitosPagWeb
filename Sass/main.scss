@@ -177,13 +177,32 @@
   justify-content: center;
   margin: 0 auto;
   padding: 35px 15px;
-  margin-top: 150px;
+  margin-top: 50px;
   font-size: 16px;
   }
   
 
   .acercaDe h2{
-    font-size: 28px;
+    font-size: 26px;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  .listbeb{
+
+    .titlistbeb{
+      width: 100%;
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      margin: 15px;
+      color: $colorTextoPagina;
+      }
+
+      .contcock{
+        font-size: large;
+      }
+            
   }
 }
 
@@ -223,6 +242,23 @@
       margin: 25px;
       padding: 25px;
       text-align: center;
+  }
+
+  .contvideo {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    
+  }
+  .videoresponsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
   }
    
  body{
